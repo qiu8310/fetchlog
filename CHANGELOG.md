@@ -1,3 +1,13 @@
+## 1.0.1 (2025-03-29)
+
+
+### Features
+
+* init core feature ([114762c](https://github.com/qiu8310/getlog/commit/114762c68a60bae917b668787a5eb355c9b6dc3c))
+* rename to fetchlog ([ac434be](https://github.com/qiu8310/getlog/commit/ac434be3516d21656cb2cb1a50362f6751552ac0))
+
+
+
 
 <!--
 

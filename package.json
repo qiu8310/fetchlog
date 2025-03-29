@@ -1,6 +1,6 @@
 {
   "name": "fetchlog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "zip log files for user",
   "bin": {
     "fetchlog": "bin.mjs"
@@ -70,5 +70,9 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "durka eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "repository": "https://github.com/qiu8310/getlog"
   }
 }
