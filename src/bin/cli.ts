@@ -54,6 +54,8 @@ export default cmd(
     const timestamp = new Date()
       .toLocaleString()
       .replace(/[^\d]/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .replace(/--+/g, '-')
     const filename = `fetchlog-${timestamp}.zip`
     const filepath = path.resolve(process.cwd(), filename)
     await zip.writeZipPromise(filepath)
