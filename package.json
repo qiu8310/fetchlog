@@ -1,0 +1,74 @@
+{
+  "name": "getlog",
+  "version": "1.0.0",
+  "description": "zip log files for user",
+  "bin": {
+    "getlog": "bin.mjs"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "bin.mjs",
+    "*.md"
+  ],
+  "durka": {
+    "env": "node",
+    "commands": {
+      "rollup": "@durka/rollup-cli@<1.0.0",
+      "jest": "@durka/test-cli@<1.0.0",
+      "eslint": "@durka/lint-cli@<1.0.0"
+    }
+  },
+  "scripts": {
+    "test": "durka jest",
+    "test:watch": "npm run test -- --watch",
+    "lint": "durka eslint --ext .js,.ts ./src",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "durka rollup --format es",
+    "build:sourcemap": "npm run build -- --sourcemap",
+    "build:watch": "npm run build -- -w",
+    "release": "durka release",
+    "prepare": "durka run prepare && npm run lint && npm run test && npm run build",
+    "preinstall": "durka only-allow npm"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=14.18.0",
+    "npm": ">=6"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "Zhonglei Qiu <qiuzhongleiabc@126.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@durka/cli": "latest",
+    "@serpent/common-cli": "^3",
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^20",
+    "adm-zip": "^0.5.16",
+    "fast-glob": "^3.3.3",
+    "tslib": "^2",
+    "typescript": "^5"
+  },
+  "jest": {
+    "preset": "./durka/vendors/jest-config"
+  },
+  "eslintConfig": {
+    "extends": "./durka/vendors/eslint-config"
+  },
+  "eslintIgnore": [
+    "dist",
+    "durka/*",
+    "!durka/config"
+  ],
+  "commitlint": {
+    "extends": [
+      "./durka/vendors/commitlint-config"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "durka eslint --fix"
+  }
+}

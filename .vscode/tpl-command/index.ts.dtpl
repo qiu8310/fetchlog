@@ -1,0 +1,14 @@
+import { cmd, opt } from '@serpent/common-cli/cmder'
+import { COMMAND_KEY } from 'src/base/constant.js'
+
+export default cmd(
+  {
+    usage:   `${COMMAND_KEY} ${dir.command} [options] [name@version]`,
+    options: {
+      name: opt('string', '选项配置'),
+    },
+  },
+  async ctx => {
+    ctx.help()
+  },
+)
