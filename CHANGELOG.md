@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/qiu8310/getlog/compare/v1.0.1...v1.0.2) (2025-03-29)
+
+
+### Features
+
+* 修改日志文件名称规范 ([175b3aa](https://github.com/qiu8310/getlog/commit/175b3aa12b5a07774265b4ab6c5be001f3a48492))
+
+
+
 ## 1.0.1 (2025-03-29)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "fetchlog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "zip log files for user",
   "bin": {
     "fetchlog": "bin.mjs"
