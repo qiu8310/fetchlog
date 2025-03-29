@@ -1,9 +1,9 @@
 {
-  "name": "getlog",
+  "name": "fetchlog",
   "version": "1.0.0",
   "description": "zip log files for user",
   "bin": {
-    "getlog": "bin.mjs"
+    "fetchlog": "bin.mjs"
   },
   "type": "module",
   "files": [

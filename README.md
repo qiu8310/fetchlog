@@ -1,11 +1,11 @@
-# getlog
+# fetchlog
 
 zip log files for user
 
 ## Usage
 
 ```bash
-npx getlog <file_glob_patterns>
+npx fetchlog <file_glob_patterns>
 ```
 
 Support environment variable:
@@ -14,7 +14,7 @@ Support environment variable:
 - $XDG_CACHE_HOME:  ~/.cache
 - $XDG_CONFIG_HOME: ~/.config
 
-e.g: `npx getlog "$XDG_DATA_HOME/logs/*.log"`
+e.g: `npx fetchlog "$XDG_DATA_HOME/logs/*.log"`
 
 ## Reference
 
