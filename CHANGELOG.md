@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/qiu8310/getlog/compare/v1.0.2...v1.0.3) (2025-04-04)
+
+
+### Features
+
+* add HOME env ([4505df3](https://github.com/qiu8310/getlog/commit/4505df3cb62f155226bad9020353f07fece32a70))
+
+
+
 ## [1.0.2](https://github.com/qiu8310/getlog/compare/v1.0.1...v1.0.2) (2025-03-29)
 
 
