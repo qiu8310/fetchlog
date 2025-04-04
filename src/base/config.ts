@@ -7,9 +7,9 @@
 
 export const CONFIG: Record<string, string[]> = {
   d2c: [
-    '$XDG_DATA_HOME/design2code/*.log',
-    '!$XDG_DATA_HOME/design2code/daemon-*.log',
-    '$XDG_CACHE_HOME/design2code/daemon.out',
-    '$XDG_CACHE_HOME/design2code/daemon.pid',
+    '$HOME/.local/design2code/*.log',
+    '!$HOME/.local/design2code/daemon-*.log',
+    '$HOME/.cache/design2code/daemon.out',
+    '$HOME/.cache/design2code/daemon.pid',
   ],
 }

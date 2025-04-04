@@ -29,6 +29,7 @@ export default cmd(
 
     const { XDG_DATA_HOME, XDG_CACHE_HOME, XDG_CONFIG_HOME, HOME = '' } = process.env
     const replaces: Record<string, string> = {
+      $HOME:            path.resolve(HOME),
       $XDG_DATA_HOME:   XDG_DATA_HOME ? path.resolve(XDG_DATA_HOME) : path.resolve(HOME, '.local'),
       $XDG_CACHE_HOME:  XDG_CACHE_HOME ? path.resolve(XDG_CACHE_HOME) : path.resolve(HOME, '.cache'),
       $XDG_CONFIG_HOME: XDG_CONFIG_HOME ? path.resolve(XDG_CONFIG_HOME) : path.resolve(HOME, '.config'),
